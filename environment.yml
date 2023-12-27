@@ -1,0 +1,13 @@
+name: dlt_dbt_stocks
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - anaconda
+  - pip:
+    - dlt[duckdb, dbt]
+    - dbt[duckdb]
+    - polars
+    - pre-commit
+    - ruff
+    - streamlit
